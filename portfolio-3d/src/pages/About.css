@@ -1,0 +1,38 @@
+.about-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  padding-top: 80px;
+}
+
+.about-card {
+  background: rgba(255,255,255,0.09);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.22);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.18);
+  padding: 40px 48px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  color: #fff;
+  max-width: 700px;
+  animation: fadeInUp 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.about-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00c6ff;
+  box-shadow: 0 2px 16px rgba(0,198,255,0.18);
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
